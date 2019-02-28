@@ -23,6 +23,7 @@ install:
   - export DISPLAY=':99.0'
   - Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
   - go get github.com/kjx98/golib/to
+  - git submodule update --init
 
 script:
   - cd sdl
